@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            min-height: 300px;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+
+        .item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            flex: 1;
+            min-width: 100px;
+        }
+
+        .item:nth-child(2) {
+            background-color: #2196F3;
+            flex: 2;
+        }
+
+        .item:nth-child(3) {
+            background-color: #ff9800;
+        }
+
+        .item:nth-child(4) {
+            background-color: #f44336;
+        }
+
+
+        .code-explanation {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox Layout Example</h1>
+
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 (flex: 2)</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <div class="code-explanation">
+        <h2>Flexbox Properties Explained:</h2>
+        <ul>
+            <li><strong>display: flex</strong> - Enables flexbox for the container</li>
+            <li><strong>flex-direction: row</strong> - Arranges items horizontally</li>
+            <li><strong>justify-content: space-between</strong> - Distributes space between items</li>
+            <li><strong>align-items: center</strong> - Vertically centers items</li>
+            <li><strong>flex-wrap: wrap</strong> - Allows items to wrap to new lines</li>
+            <li><strong>gap: 15px</strong> - Adds space between items</li>
+            <li><strong>flex: 1</strong> - Items grow equally to fill space</li>
+            <li><strong>flex: 2</strong> - Item 2 takes twice as much space as others</li>
+        </ul>
+    </div>
+</body>
+
+</html>
